@@ -1,0 +1,10 @@
+Absolute jitter bound (15 ms) and overrun durations (60-150 ms) are held fixed while the period is halved from 50 ms to 25 ms. Average over 30 runs.
+
+| T_nominal (ms) | rate (Hz) | hazard (absolute size fixed) | J / T (%) | std interval / mean interval (%) | % cycles > 1.5T | % overrun cycles (c > T) | mean latency after true crossing (ms) | max latency after true crossing (ms) | P-ctrl error (% of ideal RMS) |
+|---|---|---|---|---|---|---|---|---|---|
+| 50 | 20 | jitter only (J = 15 ms) | 30 | 24.4 | 1.3 | 0.0 | 31.89 | 60.17 | 5.85 |
+| 50 | 20 | overrun only (p = 5%) | 0 | 25.1 | 4.3 | 5.2 | 39.10 | 108.88 | 10.07 |
+| 50 | 20 | both (J = 15 ms, p = 5%) | 30 | 33.8 | 5.5 | 5.2 | 42.01 | 107.69 | 10.52 |
+| 25 | 40 | jitter only (J = 15 ms) | 60 | 46.6 | 17.0 | 0.0 | 21.96 | 41.02 | 4.06 |
+| 25 | 40 | overrun only (p = 5%) | 0 | 64.0 | 5.2 | 5.2 | 30.34 | 96.71 | 10.59 |
+| 25 | 40 | both (J = 15 ms, p = 5%) | 60 | 74.5 | 21.3 | 5.2 | 33.25 | 98.07 | 10.84 |

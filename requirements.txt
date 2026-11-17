@@ -1,0 +1,2 @@
+matplotlib>=3.5
+reportlab>=3.6    # only needed to rebuild the PDF reports (tools/build_reports.py)

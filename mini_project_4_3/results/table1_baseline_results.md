@@ -1,0 +1,7 @@
+20000 decisions, deadline 100 ms. Cloud and hybrid are shown at the baseline congestion level 0.2. Worst case is capped by the 2 s network time-out.
+
+| architecture | mean (ms) | 95th pct (ms) | 99th pct (ms) | worst case (ms) | deadline met (%) +/- 95% CI | easy decisions met (%) | hard decisions met (%) |
+|---|---|---|---|---|---|---|---|
+| edge | 39.5 | 99.6 | 111.8 | 133 | 95.25 +/- 0.29 | 100.00 | 76.77 |
+| cloud (congestion 0.2) | 49.1 | 87.8 | 166.1 | 2053 | 96.43 +/- 0.26 | 96.58 | 95.85 |
+| hybrid (congestion 0.2) | 35.4 | 61.5 | 106.9 | 2054 | 98.68 +/- 0.16 | 99.80 | 94.33 |

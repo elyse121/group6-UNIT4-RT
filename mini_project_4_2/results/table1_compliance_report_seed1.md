@@ -1,0 +1,25 @@
+Per-stream timing-compliance report, one run (seed 1), 60 s simulated. A sample is ON TIME if its read starts within 20% of the period after its due time, LATE if it starts later but before the next due time, MISSED if it is never read before the next due time.
+
+| load | rule | stream | required period (ms) | required samples | on time | late | missed | % on time | mean period overrun (ms) | max period overrun (ms) | alerts (true events) | alerts missed | mean alert latency (ms) | max alert latency (ms) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 3 streams | FP | Temperature | 100 | 600 | 576 | 20 | 4 | 96.0 | 2.2 | 135.4 | 3 | 0 | 65.9 | 105.8 |
+| 3 streams | FP | Humidity | 240 | 250 | 239 | 11 | 0 | 95.6 | 5.9 | 215.8 | 2 | 0 | 162.6 | 203.3 |
+| 3 streams | FP | Air quality | 500 | 120 | 116 | 4 | 0 | 96.7 | 8.7 | 256.6 | 5 | 0 | 207.1 | 513.1 |
+| 3 streams | EDF | Temperature | 100 | 600 | 575 | 21 | 4 | 95.8 | 2.3 | 135.4 | 3 | 0 | 65.9 | 105.8 |
+| 3 streams | EDF | Humidity | 240 | 250 | 239 | 11 | 0 | 95.6 | 5.9 | 210.1 | 2 | 0 | 162.6 | 203.3 |
+| 3 streams | EDF | Air quality | 500 | 120 | 116 | 4 | 0 | 96.7 | 8.7 | 256.6 | 5 | 0 | 207.1 | 513.1 |
+| 3 streams | RR | Temperature | 100 | 600 | 481 | 108 | 11 | 80.2 | 8.3 | 195.3 | 3 | 0 | 75.2 | 133.8 |
+| 3 streams | RR | Humidity | 240 | 250 | 242 | 8 | 0 | 96.8 | 3.8 | 119.7 | 2 | 0 | 162.6 | 203.3 |
+| 3 streams | RR | Air quality | 500 | 120 | 118 | 2 | 0 | 98.3 | 2.8 | 112.7 | 5 | 0 | 201.8 | 507.0 |
+| 4 streams | FP | Temperature | 100 | 600 | 474 | 89 | 37 | 79.0 | 13.9 | 215.7 | 3 | 0 | 36.6 | 57.6 |
+| 4 streams | FP | Humidity | 240 | 250 | 211 | 39 | 0 | 84.4 | 16.2 | 231.8 | 2 | 0 | 162.6 | 203.3 |
+| 4 streams | FP | Air quality | 500 | 120 | 106 | 14 | 0 | 88.3 | 19.5 | 264.3 | 5 | 0 | 148.2 | 227.3 |
+| 4 streams | FP | Vibration (fast) | 50 | 1200 | 997 | 106 | 97 | 83.1 | 7.0 | 135.4 | 11 | 0 | 22.9 | 120.9 |
+| 4 streams | EDF | Temperature | 100 | 600 | 473 | 90 | 37 | 78.8 | 14.0 | 227.2 | 3 | 0 | 36.6 | 57.6 |
+| 4 streams | EDF | Humidity | 240 | 250 | 211 | 39 | 0 | 84.4 | 16.1 | 220.8 | 2 | 0 | 162.6 | 203.3 |
+| 4 streams | EDF | Air quality | 500 | 120 | 106 | 14 | 0 | 88.3 | 19.5 | 264.3 | 5 | 0 | 148.2 | 227.3 |
+| 4 streams | EDF | Vibration (fast) | 50 | 1200 | 997 | 106 | 97 | 83.1 | 7.0 | 135.4 | 11 | 0 | 22.9 | 120.9 |
+| 4 streams | RR | Temperature | 100 | 600 | 490 | 94 | 16 | 81.7 | 10.5 | 211.8 | 3 | 0 | 65.9 | 105.8 |
+| 4 streams | RR | Humidity | 240 | 250 | 217 | 33 | 0 | 86.8 | 11.4 | 157.8 | 2 | 0 | 162.6 | 203.3 |
+| 4 streams | RR | Air quality | 500 | 120 | 112 | 8 | 0 | 93.3 | 14.0 | 149.0 | 5 | 0 | 249.9 | 561.5 |
+| 4 streams | RR | Vibration (fast) | 50 | 1200 | 806 | 232 | 162 | 67.2 | 14.2 | 213.9 | 11 | 1 | 11.1 | 23.4 |

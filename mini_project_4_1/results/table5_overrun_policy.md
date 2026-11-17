@@ -1,0 +1,10 @@
+Rebase = the schedule moves later after an overrun (PLC scan). Catch-up = the original schedule is kept. Average over 30 runs.
+
+| overrun prob. | policy | final schedule lag (ms) | mean latency after true crossing (ms) | max latency after true crossing (ms) | P-ctrl error (% of ideal RMS) |
+|---|---|---|---|---|---|
+| 2% | rebase | 440.61 | 33.96 | 63.20 | 7.63 |
+| 2% | catch_up | 0.00 | 38.26 | 82.36 | 5.75 |
+| 5% | rebase | 1125.90 | 39.10 | 108.88 | 10.07 |
+| 5% | catch_up | 0.00 | 42.85 | 108.69 | 9.04 |
+| 10% | rebase | 2212.24 | 47.63 | 119.74 | 13.00 |
+| 10% | catch_up | 0.00 | 48.94 | 121.84 | 12.68 |
